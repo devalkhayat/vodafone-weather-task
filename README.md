@@ -22,7 +22,7 @@
 <br/>
 🖋️ Lottie Icons
 <br/>
-🖋️ Github Actions for creating CI pipeline 
+🖋️ Github Actions for creating <a href="https://github.com/devalkhayat/vodafone-weather-task/actions">CI pipeline
 
 https://github.com/user-attachments/assets/e996196e-60fb-482e-92ac-01a8205d5c75
 
