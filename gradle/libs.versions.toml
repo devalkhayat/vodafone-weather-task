@@ -25,7 +25,7 @@ serialization_blugin="2.1.0"
 com_google_devtools_ksp="2.1.20-2.0.0"
 room_version = "2.7.0"
 lottie_compose="4.0.0"
-vodafoneWeatherTask = "1.0.3"
+vodafoneWeatherTask = "1.0.4"
 
 
 [libraries]
