@@ -1,0 +1,82 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+composeBom = "2024.12.01"
+appcompat = "1.7.0"
+material = "1.12.0"
+hiltAndroid = "2.54"
+hilt_navigation_compose="1.2.0"
+roomCompiler = "2.7.0"
+viewModelVersion="2.8.7"
+coroutinesVersion="1.8.1"
+coil="2.7.0"
+nav_version = "2.8.5"
+retrofit = "2.10.0"
+retrofit_json_converter="2.9.0"
+retrofit_okhttp = "4.11.0"
+serialization="1.7.3"
+serialization_blugin="2.1.0"
+com_google_devtools_ksp="2.1.20-2.0.0"
+room_version = "2.7.0"
+lottie_compose="4.0.0"
+vodafoneWeatherTask = "1.0.3"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
+hilt-navigation-compose={group="androidx.hilt",name="hilt-navigation-compose" ,version.ref="hilt_navigation_compose"}
+androidx-room-runtime={group="androidx.room",name="room-runtime",version.ref="room_version"}
+androidx-room-coroutines={group="androidx.room",name="room-ktx",version.ref="room_version"}
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "nav_version" }
+kotlinx-coroutines={group="org.jetbrains.kotlinx",name="kotlinx-coroutines-android", version.ref="coroutinesVersion"}
+androidx-lifecycle-viewmodel={group="androidx.lifecycle",name="lifecycle-viewmodel-compose",version.ref="viewModelVersion"}
+coil= {group = "io.coil-kt", name = "coil-compose", version.ref = "coil"}
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-json-converter={group="com.squareup.retrofit2",name="converter-gson" , version.ref="retrofit_json_converter"}
+retrofit-okhttp={group="com.squareup.okhttp3",name="logging-interceptor",version.ref="retrofit_okhttp"}
+serialization={group="org.jetbrains.kotlinx",name="kotlinx-serialization-json",version.ref="serialization"}
+lottie-compose={group="com.airbnb.android",name="lottie-compose",version.ref="lottie_compose"}
+vodafone-weather-task = { group = "com.github.devalkhayat",name="vodafone-weather-task", version.ref = "vodafoneWeatherTask" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+androidx-room={id="androidx.room",version.ref="room_version"}
+android-hilt={id="com.google.dagger.hilt.android",version.ref="hiltAndroid"}
+kotlin-serialization={id="org.jetbrains.kotlin.plugin.serialization",version.ref="serialization_blugin"}
+com-google-devtools-ksp={id="com.google.devtools.ksp",version.ref="com_google_devtools_ksp"}
+maven-publish = { id = "maven-publish" }
+
+
+
+[bundles]
+retrofit=["retrofit","retrofit-json-converter","retrofit-okhttp","serialization"]
+
+
